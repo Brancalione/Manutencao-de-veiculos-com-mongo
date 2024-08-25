@@ -1,0 +1,34 @@
+@baseUrl = http://localhost:3000/api
+### Pesquisa todos os cursos
+GET {{baseUrl}}/avisos
+
+### Cria uma nova conta
+POST {{baseUrl}}/avisos
+
+Content-Type: application/json
+{
+"veiculo":"AAA",
+"descricaoManu": "ADSASDASD",
+"Valor": 234234,
+"DescricaoManuDetalhada": "dfsdfsdf",
+}
+
+### Pesquisa curso específico
+GET {{baseUrl}}/api/livros/656e82cba66d0d8f3aceaa33
+
+
+### criar novo registro a conta com id=1
+POST {{baseUrl}}/avisos
+Content-Type: application/json
+
+{
+"veiculo": "Livro dos guri",
+"descricaoManu": "Descricao",
+"Valor": "222",
+"DescricaoManuDetalhada": "acasdasasdasd",
+}
+
+## Exclui uma conta específi
+DELETE {{baseUrl}}/api/livros/656e82cba66d0d8f3aceaa33
+
+
